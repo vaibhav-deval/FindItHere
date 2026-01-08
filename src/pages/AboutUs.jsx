@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <div className="flex flex-col    ">
+    <div className="flex flex-col h-screen   ">
       <div className="text-2xl md:text-4xl mt-20 font-bold p-10 ">
         WHY FIND<span className="text-(--color-accent) ">IT</span>HERE?
         <h1 className="m-5 font-normal">More Than a Platform — A Responsible Community</h1>

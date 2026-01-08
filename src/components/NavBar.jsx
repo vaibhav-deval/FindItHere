@@ -9,9 +9,9 @@ const NavBar = () => {
     <>
       <div className="flex flex-row-reverse lg:flex-row justify-between fixed top-0 w-full backdrop-blur-xs p-5  text-white">
         <NavLink to="/">
-        <div className="font-bold md:text-3xl duration-300 transition-all cursor-pointer hover:text-shadow-[#24cfa6] hover:scale-110 text-shadow-xs rounded-xl  px-10  flex justify-center items-center">
-          FindItHere
-        </div>
+          <div className="font-bold md:text-3xl duration-300 transition-all cursor-pointer hover:text-shadow-[#24cfa6] hover:scale-110 text-shadow-xs rounded-xl  px-10  flex justify-center items-center">
+            FindItHere
+          </div>
         </NavLink>
         <div className="lg:hidden flex items-center text-md justify-between gap-5">
           <RiMenuLine
@@ -40,7 +40,7 @@ const NavBar = () => {
           >
             Home
           </NavLink>
-          <hr/>
+          <hr />
           <NavLink
             className=" "
             to="/aboutUs"
@@ -50,11 +50,10 @@ const NavBar = () => {
                 : { color: "white" }
             }
             onClick={() => setNav("right-[-100%]")}
-
           >
             About Us
           </NavLink>
-          <hr/>
+          <hr />
 
           <NavLink
             className=""
@@ -65,11 +64,24 @@ const NavBar = () => {
                 : { color: "white" }
             }
             onClick={() => setNav("right-[-100%]")}
-
           >
             Contact Us
           </NavLink>
-          <hr/>
+          <hr />
+
+          <NavLink
+            className="hover:scale-105 transition-transform duration-300"
+            to="/Community"
+            style={({ isActive }) =>
+              isActive
+                ? { color: "#24cfa6", textDecoration: "underline" }
+                : { color: "white" }
+            }
+            onClick={() => setNav("right-[-100%]")}
+          >
+            Community Guidelines
+          </NavLink>
+          <hr />
 
           <NavLink
             className=""
@@ -78,7 +90,6 @@ const NavBar = () => {
               isActive ? { display: "none" } : { color: "white" }
             }
             onClick={() => setNav("right-[-100%]")}
-
           >
             <LoginBtn />
           </NavLink>
@@ -116,6 +127,17 @@ const NavBar = () => {
             }
           >
             Contact Us
+          </NavLink>
+          <NavLink
+            className="hover:scale-105 transition-transform duration-300"
+            to="/Community"
+            style={({ isActive }) =>
+              isActive
+                ? { color: "#24cfa6", textDecoration: "underline" }
+                : { color: "white" }
+            }
+          >
+            Community Guidelines
           </NavLink>
           <NavLink
             className="hover:scale-105 transition-transform duration-300"

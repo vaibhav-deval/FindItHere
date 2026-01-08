@@ -7,6 +7,7 @@ import Login from "./pages/Login.jsx";
 import Footer from "./components/Footer.jsx";
 
 import { Route, Routes } from "react-router-dom";
+import Community from "./pages/Community.jsx";
 
 const App = () => {
   return (
@@ -17,7 +18,9 @@ const App = () => {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Community" element={<Community />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

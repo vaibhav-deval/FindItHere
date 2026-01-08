@@ -1,8 +1,118 @@
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="flex justify-between  p-5 bg-(--color-secondary) text-white">
-      <div className="font-bold text-3xl">FindItHere</div>
-      <div className="flex items-center text-xl justify-between gap-5 font-semibold"></div>
+    <div className="bg-(--color-primary) p-5 mt-20 text-xl">
+      <div className=" md:text-xl  font-bold  ">
+        Helping Lost Things <span className="text-(--color-accent) ">Find</span>{" "}
+        Their Way Back
+        <h1 className="mx-5 font-normal">
+          A community-driven lost & found platform built on honesty, safety, and
+          trust.
+        </h1>
+      </div>
+      <div className="flex my-5 gap-10 flex-col md:flex-row justify-around md:items-center">
+        <div className="flex gap-1  md:text-sm flex-col">
+          <h1 className="text-2xl">Quick Links</h1>
+          <NavLink
+            className="hover:scale-105 transition-transform duration-300"
+            to="/"
+            style={({ isActive }) =>
+              isActive
+                ? { color: "#24cfa6", textDecoration: "underline" }
+                : { color: "white" }
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className="hover:scale-105 transition-transform duration-300"
+            to="/aboutUs"
+            style={({ isActive }) =>
+              isActive
+                ? { color: "#24cfa6", textDecoration: "underline" }
+                : { color: "white" }
+            }
+          >
+            About Us
+          </NavLink>
+          <NavLink
+            className="hover:scale-105 transition-transform duration-300"
+            to="/Contact"
+            style={({ isActive }) =>
+              isActive
+                ? { color: "#24cfa6", textDecoration: "underline" }
+                : { color: "white" }
+            }
+          >
+            Contact Us
+          </NavLink>
+          <NavLink
+            className="hover:scale-105 transition-transform duration-300"
+            to="/Community"
+            style={({ isActive }) =>
+              isActive
+                ? { color: "#24cfa6", textDecoration: "underline" }
+                : { color: "white" }
+            }
+          >
+            Community Guidelines
+          </NavLink>
+          <NavLink
+            className="hover:scale-105 transition-transform duration-300"
+            to="/Community"
+            style={({ isActive }) =>
+              isActive
+                ? { color: "#24cfa6", textDecoration: "underline" }
+                : { color: "white" }
+            }
+          >
+            Privacy Policy
+          </NavLink>
+          <NavLink
+            className="hover:scale-105 transition-transform duration-300"
+            to="/Community"
+            style={({ isActive }) =>
+              isActive
+                ? { color: "#24cfa6", textDecoration: "underline" }
+                : { color: "white" }
+            }
+          >
+            Terms & Conditions
+          </NavLink>
+        </div>
+        <div className="flex gap-5  md:text-sm flex-col">
+          <h1 className="text-2xl">Community Rules</h1>
+          <ul className="flex flex-col gap-1 list-disc list-inside">
+            <li>No selling of found items</li>
+            <li>No forced or demanded rewards</li>
+            <li>No sharing of personal contact details</li>
+            <li>Use in-app chat only</li>
+            <li>Respect every user</li>
+          </ul>
+        </div>
+        <div className="flex gap-5  md:text-sm flex-col">
+          <h1 className="text-2xl"> Trust & Safety</h1>
+          <ul className="flex flex-col gap-1 list-disc list-inside">
+            <li>Verified user accounts</li>
+            <li>Age-restricted access</li>
+            <li>Secure in-app communication</li>
+            <li>Moderated content & reports</li>
+          </ul>
+        </div>
+        <div className="flex gap-5  md:text-sm flex-col">
+          <h1 className="text-2xl"> Trust & Safety</h1>
+          <ul className="flex flex-col gap-1 list-disc list-inside">
+            <li>Community Impacts</li>
+            <li>Total Cases Reported</li>
+            <li>Successfully Returned Items</li>
+            <li>Active Community Members</li>
+          </ul>
+        </div>
+      </div>
+      <div className="text-center">
+        <h1>© 2026 FindItHere.</h1>
+        All rights reserved. Built with ❤️ to make communities more responsible.
+      </div>
     </div>
   );
 };

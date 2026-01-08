@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-     <div className="flex flex-col    ">
+     <div className="flex flex-col  h-screen  ">
       <div className="text-2xl md:text-4xl mt-20 font-bold p-10 ">
         Get in <span className="text-(--color-accent) ">Touch</span>--
         <h1 className="m-5 font-normal">We’re Here to Help You Reconnect</h1>
