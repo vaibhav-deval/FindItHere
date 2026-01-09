@@ -6,7 +6,7 @@ const AboutUs = () => {
         <h1 className="m-5 font-normal">More Than a Platform — A Responsible Community</h1>
       </div>
       <div className="mx-5 md:mx-40 ">
-        <p className="text-md md:text-5xl  px-10 pb-20">
+        <p className="text-2xl lg:text-5xl md:text-4xl  lg:px-10 pb-20">
           &nbsp;&nbsp;&nbsp;&nbsp;FindItHere is designed to help people help each other.{" "}
           <span className="text-(--color-accent) ">
             No selling, no pressure, no misuse —
