@@ -33,7 +33,7 @@ const HeroSection = () => {
         <span className="text-(--color-accent) "> simple and secure.</span>
       </div>
       <div className=" mt-10 lg:hidden">
-        <NavLink className="" to="/Login">
+        <NavLink className="" to="/LoginSignup">
           <LoginBtn />
         </NavLink>
       </div>

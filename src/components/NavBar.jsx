@@ -85,7 +85,7 @@ const NavBar = () => {
 
           <NavLink
             className=""
-            to="/Login"
+            to="/LoginSignup"
             style={({ isActive }) =>
               isActive ? { display: "none" } : { color: "white" }
             }
@@ -141,7 +141,7 @@ const NavBar = () => {
           </NavLink>
           <NavLink
             className="hover:scale-105 transition-transform duration-300"
-            to="/Login"
+            to="/LoginSignup"
             style={({ isActive }) =>
               isActive ? { display: "none" } : { color: "white" }
             }
