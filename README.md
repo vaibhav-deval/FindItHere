@@ -1,89 +1,131 @@
 🔍 FindItHere
 
-FindItHere is a community-driven Lost & Found platform designed to help people reunite with their lost belongings — safely, ethically, and responsibly.
+FindItHere is a community-driven Lost & Found web platform built to help people reconnect with lost items, pets, and belongings in a safe, ethical, and trust-focused way.
 
-The platform focuses on trust, privacy, and motivation, ensuring that items are returned to their rightful owners without misuse, selling, or forced rewards.
+The platform promotes honesty and responsibility by discouraging selling, forced rewards, and misuse, while encouraging positive community participation.
 
-🌟 Vision
+🚧 Project Status
 
-To build a trusted digital space where:
+⚠️ Currently under active development
 
-Lost items find their way back home
+Frontend development in progress
 
-People help each other without expectations
+Backend (API & database) will be integrated later
 
-Honesty is encouraged through recognition, not money
+Essential data is currently hardcoded for UI and logic testing
 
-🚀 Current Status
+🎯 Project Vision
 
-✅ Initial project setup
-✅ Homepage UI (Landing page)
-🚧 Core features under development
+To create a platform where:
 
-This project is currently in its early development phase.
+Lost items can be reported and found easily
 
-✨ Planned Features
+Users interact safely without sharing personal details
 
-🔐 User authentication with age restriction
+Honesty is rewarded through recognition, not money
 
-📦 Post lost & found items (items, pets, documents, etc.)
+Community trust is built through responsible behavior
 
-💬 Secure in-app chat (no personal contact sharing)
+🧱 Tech Stack
+🖥️ Frontend
 
-🏆 Honor levels based on successful returns
+React
 
-📜 Strict community guidelines & moderation
+Tailwind CSS
 
-🚫 No selling of items
+React Router DOM
 
-🚫 No forced or demanded rewards
+🌐 Backend (Planned)
 
-🔒 Privacy-first design
+Node.js
 
-🛡️ Community Guidelines (Core Rules)
+Express.js
 
-Found items must not be sold
+MongoDB
 
-Rewards are optional, never forced
 
-No sharing of phone numbers, emails, or personal details
+🎨 UI & Design
 
-Communication only via in-app chat
+Styling done using Tailwind CSS
 
-Misuse may lead to account suspension
+Icons sourced from Remix Icon
 
-🧑‍💻 Tech Stack (Planned)
-    MERN Stack
+Design & UI inspiration taken from Sheryians Coding School
 
-📂 Project Goal
+This project is independently built.
+The design is adapted and customized for learning purposes, while all functionality and implementation are original.
+
+✨ Current Features (Frontend)
+
+Landing / Home page UI
+
+Login & Signup pages (UI only)
+
+Policy pages:
+
+Community Guidelines
+
+Privacy Policy
+
+Terms & Conditions
+
+Responsive layout
+
+Clean and minimal UI structure
+
+🧠 Planned Features
+
+User authentication
+
+Age restriction enforcement
+
+Post lost & found items
+
+Secure in-app chat
+
+Trust points & honor levels
+
+Report & moderation system
+
+Admin controls
+
+Full backend integration
+
+📜 Core Community Rules (Concept)
+
+❌ No selling of found items
+
+❌ No forced or demanded rewards
+
+❌ No sharing personal contact details
+
+✅ Communication only via in-app chat
+
+✅ Respect and honesty required
+
+Violation of rules may result in account suspension.
+
+📂 Project Purpose
 
 This project is being built as:
 
-A learning-focused fullstack project
+A learning-focused fullstack MERN project
 
-A portfolio-worthy application
+A portfolio-level application
 
-A potential real-world MVP
+A foundation for a real-world MVP
 
-The codebase and features will evolve incrementally.
+The codebase and architecture will evolve phase by phase.
 
-📌 Future Roadmap
-
-User dashboard
-
-Chat moderation & reporting
-
-Trust score system
-
-Admin panel
-
-Responsive & accessibility improvements
-
-🤝 Contributions
+🤝 Contributions & Feedback
 
 This is currently a personal project.
-Feedback, suggestions, and ideas are always welcome.
+Feedback, suggestions, and constructive criticism are always welcome.
 
 ❤️ Acknowledgment
 
-Built with the intention of making communities more responsible and connected.
+Built with the intention of encouraging ethical behavior, responsibility, and community support.
+
+⭐ Note
+
+Backend integration and real data handling will be added in future phases.

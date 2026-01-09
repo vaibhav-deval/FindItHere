@@ -1,4 +1,4 @@
-import "./app.css";
+import "./App.css";
 import NavBar from "./components/NavBar.jsx";
 import Home from "./pages/Home.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
