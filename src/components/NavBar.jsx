@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import LoginBtn from "./LoginBtn.jsx";
 import { RiMenuLine } from "@remixicon/react";
 import { useState } from "react";
+import LoginSigninBtn from "./LoginSigninBtn.jsx";
 
 const NavBar = () => {
   const [nav, setNav] = useState("right-[-100%]");
@@ -67,17 +67,17 @@ const NavBar = () => {
           Community Guidelines
         </NavLink>
         <hr className="border rounded-4xl border-(--color-accent) " />
+        <div onClick={() => setNav("right-[-100%]")}>
+          <LoginSigninBtn button={"Login"} />
+        </div>
+        <hr className="border rounded-4xl border-(--color-accent) " />
+        <div onClick={() => setNav("right-[-100%]")}>
+          <LoginSigninBtn
+            onClick={() => setNav("right-[-100%]")}
+            button={"Signin"}
+          />
+        </div>
 
-        <NavLink
-          className=""
-          to="/LoginSignup"
-          style={({ isActive }) =>
-            isActive ? { display: "none" } : { color: "white" }
-          }
-          onClick={() => setNav("right-[-100%]")}
-        >
-          <LoginBtn />
-        </NavLink>
         <hr className="border rounded-4xl border-(--color-accent) " />
       </div>
       <div className="flex overflow-hidden flex-row-reverse lg:flex-row justify-between fixed top-0 w-full backdrop-blur-xs p-5  text-white">
@@ -147,15 +147,8 @@ const NavBar = () => {
           >
             Community Guidelines
           </NavLink>
-          <NavLink
-            className="hover:scale-105 transition-transform duration-300"
-            to="/LoginSignup"
-            style={({ isActive }) =>
-              isActive ? { display: "none" } : { color: "white" }
-            }
-          >
-            <LoginBtn />
-          </NavLink>
+          <LoginSigninBtn button={"Login"} />
+          <LoginSigninBtn button={"Signin"} />
         </div>
       </div>
     </>

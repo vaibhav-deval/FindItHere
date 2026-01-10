@@ -1,5 +1,6 @@
 import { RiRefreshLine } from "@remixicon/react";
 import { NavLink } from "react-router-dom";
+import LoginSigninBtn from "../components/LoginSigninBtn";
 
 const Signin = () => {
   return (
@@ -129,12 +130,7 @@ const Signin = () => {
       <h1>
         Already have an account?
         <span className="text-(--color-accent)"> </span>
-        <button
-          className="border rounded-3xl  px-5 py-2 text-(--color-accent) hover:bg-(--color-primary) active:scale-105 transition-all"
-          type="submit"
-        >
-          Log in here.
-        </button>
+        <LoginSigninBtn button={"Login"} />
       </h1>
     </div>
   );

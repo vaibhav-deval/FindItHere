@@ -1,5 +1,5 @@
-import LoginBtn from "./LoginBtn";
-import { NavLink } from "react-router-dom";
+import LoginSigninBtn from "./LoginSigninBtn";
+
 const HeroSection = () => {
   return (
     <div className="text-(--color-text) w-full md:min-w-150  bg-cover flex flex-col justify-center items-center ">
@@ -33,9 +33,7 @@ const HeroSection = () => {
         <span className="text-(--color-accent) "> simple and secure.</span>
       </div>
       <div className=" mt-10 lg:hidden">
-        <NavLink className="" to="/LoginSignup">
-          <LoginBtn />
-        </NavLink>
+        <LoginSigninBtn button={"Login"}/>
       </div>
     </div>
   );
