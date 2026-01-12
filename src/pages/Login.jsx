@@ -1,8 +1,16 @@
 import { RiRefreshLine } from "@remixicon/react";
-import { NavLink } from "react-router-dom";
 import LoginSigninBtn from "../components/LoginSigninBtn";
+import useForm from "../hooks/useFrom";
 
 const Login = () => {
+  const { values, handleChange } = useForm({
+    email: "",
+    password: "",
+  });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(values);
+  };
   return (
     <div className="  flex items-center flex-col  px-5  ">
       <div>
@@ -22,17 +30,26 @@ const Login = () => {
           </p>
         </div>
       </div>
-      <form className=" w-3/4 md:w-1/4 flex flex-col  border border-(--color-accent) rounded-4xl p-5 mb-5  lg:text-md ">
+      <form
+        onSubmit={handleSubmit}
+        className=" w-3/4 md:w-1/4 flex flex-col  border border-(--color-accent) rounded-4xl p-5 mb-5  lg:text-md "
+      >
         <input
           className="md:h-20 p-5  outline-none"
           type="email"
           placeholder="Email"
+          name="email"
+          value={values.email}
+          onChange={handleChange}
         />
         <hr className="text-(--color-accent) " />
         <input
           className="md:h-20 p-5 outline-none"
           type="password"
           placeholder="Password"
+          name="password"
+          value={values.password}
+          onChange={handleChange}
         />
         <hr className="text-(--color-accent)" />
         <div className="flex gap-2 py-5 justify-between ">

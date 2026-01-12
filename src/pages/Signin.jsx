@@ -1,8 +1,30 @@
 import { RiRefreshLine } from "@remixicon/react";
-import { NavLink } from "react-router-dom";
 import LoginSigninBtn from "../components/LoginSigninBtn";
+import useForm from "../hooks/useFrom";
 
 const Signin = () => {
+  const { values, handleChange } = useForm({
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    mobile: "",
+    dob: "",
+    terms: false,
+  });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (values.password !== values.confirmPassword) {
+      alert("Password and Confirm Password is not same");
+      return;
+    } else {
+      if (!values.terms) {
+        alert("Please accept Terms & Conditions");
+        return;
+      }
+      console.log(values);
+    }
+  };
   return (
     <div className=" flex items-center flex-col  px-5  ">
       <div>
@@ -23,12 +45,19 @@ const Signin = () => {
           </p>
         </div>
       </div>
-      <form className=" w-3/4 md:w-1/2 flex flex-col  md:grid grid-cols-2 gap-5  border border-(--color-accent) rounded-4xl p-5 mb-5  lg:text-md ">
+      <form
+        onSubmit={handleSubmit}
+        className=" w-3/4 md:w-1/2 flex flex-col  md:grid grid-cols-2 gap-5  border border-(--color-accent) rounded-4xl p-5 mb-5  lg:text-md "
+      >
         <div>
           <input
             className="md:h-20 p-5 outline-none"
             type="text"
             placeholder="Name"
+            name="name"
+            value={values.name}
+            onChange={handleChange}
+            required
           />
           <hr className="text-(--color-accent)" />
         </div>
@@ -37,6 +66,10 @@ const Signin = () => {
             className="md:h-20 p-5 outline-none"
             type="email"
             placeholder="Email"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            required
           />
           <hr className="text-(--color-accent)" />
         </div>
@@ -45,9 +78,11 @@ const Signin = () => {
             className="md:h-20 p-5 outline-none"
             placeholder="Phone Number"
             type="tel"
-            name="telphone"
-            pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+            name="mobile"
+            pattern="[0-9]*"
             required
+            value={values.mobile}
+            onChange={handleChange}
           />
           <hr className="text-(--color-accent)" />
         </div>
@@ -61,7 +96,9 @@ const Signin = () => {
             className="md:h-20 p-5 outline-none"
             placeholder="Bod"
             type="date"
-            name="telphone"
+            name="dob"
+            value={values.dob}
+            onChange={handleChange}
             required
           />
           <hr className="text-(--color-accent)" />
@@ -72,6 +109,10 @@ const Signin = () => {
             className="md:h-20 p-5 outline-none"
             type="password"
             placeholder="Create Password"
+            name="password"
+            value={values.password}
+            onChange={handleChange}
+            required
           />
           <hr className="text-(--color-accent) " />
         </div>
@@ -81,6 +122,10 @@ const Signin = () => {
             className="md:h-20 p-5 outline-none"
             type="password"
             placeholder="Confirm Password"
+            name="confirmPassword"
+            value={values.confirmPassword}
+            onChange={handleChange}
+            required
           />
           <hr className="text-(--color-accent) " />
         </div>
@@ -102,19 +147,25 @@ const Signin = () => {
           <hr className="text-(--color-accent)" />
         </div>
         <div className="flex items-center gap-5 p-5">
-          <input type="checkbox" className=" outline-none " />
+          <input
+            type="checkbox"
+            className=" outline-none "
+            name="terms"
+            checked={values.terms}
+            onChange={handleChange}
+          />
           <h1 className="checked">
             I agree to follow the
-            <NavLink
+            <a
               className="text-(--color-accent)"
-              to="/Community"
+              href="/Community"
               target="_blank"
             >
               {" "}
               Community Guidelines{" "}
               <span className="text-(--color-text)">and</span> Terms &
               Conditions.
-            </NavLink>
+            </a>
           </h1>
           <hr className="text-(--color-accent)" />
         </div>

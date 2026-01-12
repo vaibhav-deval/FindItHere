@@ -12,7 +12,7 @@ import Community from "./pages/Community.jsx";
 
 const App = () => {
   return (
-    <div className=" bg-(--color-background) w-full h-full text-(--color-text)">
+    <div className="relative bg-(--color-background)  w-full h-full text-(--color-text) max-w-450">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

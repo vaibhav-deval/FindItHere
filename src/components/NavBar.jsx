@@ -80,7 +80,7 @@ const NavBar = () => {
 
         <hr className="border rounded-4xl border-(--color-accent) " />
       </div>
-      <div className="flex overflow-hidden flex-row-reverse lg:flex-row justify-between fixed top-0 w-full backdrop-blur-xs p-5  text-white">
+      <div className="flex flex-row-reverse lg:flex-row justify-between sticky w-full top-0  backdrop-blur-xs p-5  text-white">
         <NavLink to="/">
           <div className="font-bold h-full text-2xl  md:text-3xl duration-300 transition-all cursor-pointer hover:text-shadow-[#24cfa6] hover:scale-110 text-shadow-xs rounded-xl flex justify-center items-center">
             <div className="object-cover object-center h-full overflow-hidden">

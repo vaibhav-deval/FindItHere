@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-(--color-primary) p-5 mt-20 text-xl">
@@ -13,72 +12,48 @@ const Footer = () => {
       <div className="flex my-5 gap-10 flex-col md:flex-row justify-around md:items-center">
         <div className="flex gap-1  md:text-sm flex-col">
           <h1 className="text-2xl">Quick Links</h1>
-          <NavLink
+          <a
             className="hover:scale-105 transition-transform duration-300"
-            to="/"
-            style={({ isActive }) =>
-              isActive
-                ? { color: "#24cfa6", textDecoration: "underline" }
-                : { color: "white" }
-            }
+              href="/"
+             
           >
             Home
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             className="hover:scale-105 transition-transform duration-300"
-            to="/aboutUs"
-            style={({ isActive }) =>
-              isActive
-                ? { color: "#24cfa6", textDecoration: "underline" }
-                : { color: "white" }
-            }
+              href="/aboutUs"
+             
           >
             About Us
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             className="hover:scale-105 transition-transform duration-300"
-            to="/Contact"
-            style={({ isActive }) =>
-              isActive
-                ? { color: "#24cfa6", textDecoration: "underline" }
-                : { color: "white" }
-            }
+              href="/Contact"
+             
           >
             Contact Us
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             className="hover:scale-105 transition-transform duration-300"
-            to="/Community"
-            style={({ isActive }) =>
-              isActive
-                ? { color: "#24cfa6", textDecoration: "underline" }
-                : { color: "white" }
-            }
+              href="/Community"
+             
           >
             Community Guidelines
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             className="hover:scale-105 transition-transform duration-300"
-            to="/Community"
-            style={({ isActive }) =>
-              isActive
-                ? { color: "#24cfa6", textDecoration: "underline" }
-                : { color: "white" }
-            }
+              href="/Community"
+             
           >
             Privacy Policy
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             className="hover:scale-105 transition-transform duration-300"
-            to="/Community"
-            style={({ isActive }) =>
-              isActive
-                ? { color: "#24cfa6", textDecoration: "underline" }
-                : { color: "white" }
-            }
+              href="/Community"
+             
           >
             Terms & Conditions
-          </NavLink>
+          </a>
         </div>
         <div className="flex gap-5  md:text-sm flex-col">
           <h1 className="text-2xl">Community Rules</h1>
